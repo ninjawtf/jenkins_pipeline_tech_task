@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git url:'https://github.com/jglick/simple-maven-project-with-tests.git'
+                git url:'https://github.com/jglick/simple-maven-project-with-tests.git',
                     branch: ''
 
                 // Run Maven on a Unix agent.
