@@ -9,8 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git url:'https://github.com/jglick/simple-maven-project-with-tests.git',
-                    branch: '*'
+                git url:'https://github.com/jglick/simple-maven-project-with-tests.git'
 
                 // Run Maven on a Unix agent.
                 // sh "mvn -Dmaven.test.failure.ignore=true clean package"
